@@ -441,6 +441,10 @@ form .btn2{
         flex-direction: column; 
         margin-top: 10%;
     }
+    
+    .tab-links.active-link::after{
+    width:50%;
+    }
 
     .about_text{
         font-size: 14px;
