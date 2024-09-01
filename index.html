@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE-edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title> Portfolio </title>
+        <link rel = "stylesheet" href = "style.css" > 
+        <script src="https://kit.fontawesome.com/ef94ccd68b.js" crossorigin="anonymous"></script> 
+    </head>
+    <body>
+    <div id = "header">
+        <div class = "container">
+            <nav>
+                <ul id = "sidemenu">
+                    <li><a href = "#header"> HOME</a></li>
+                    <li><a href = "#about"> ABOUT</a></li>
+                    <li><a href = "#services"> SERVICES</a></li>
+                    <li><a href = "#portfolio"> PORTFOLIO</a></li>
+                    <li><a href = "#contact"> CONTACT</a></li>
+                    <div class="icon1">
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                    </div>
+                </ul>
+                <div class="icon2">
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </div>
+            </nav>
+            <div class="header-content">
+                <img src = "images/logo2.jpg" class = "logo"> 
+                <div class ="header-text">
+                    <h1> Hi, I'm <br><span> Gorika Madaan </span></h1>
+                    <p><i>Welcome to my personal portfolio!</i></p>
+                </div>
+            </div>
+    </div>
+<!-------------------------------about-------------------------->
+    <div id ="about">
+        <div class="container">
+            <div class = "row">
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p class = "about_text"> I am a motivated and forward-thinking individual 
+                        with a strong foundation in AI and machine learning, 
+                        currently in my last year of MSc in Bioinformatics. 
+                        With hands-on experience in advanced algorithms and 
+                        data analysis through projects such as 
+                        AI-Nexus: SVM-Powered Attrition Forecasting and 
+                        medical insurance cost prediction, 
+                        I have developed technical skills in Python, SQL, DBMS and C++. 
+                        Passionate about leveraging these skills to tackle complex challenges
+                         and drive innovation, I am eager to contribute to a dynamic environment 
+                         where I can further develop my expertise in AI/ML and data science.</p>
+
+                         <div class ="tab-titles">
+                            <p class ="tab-links active-link" onclick="opentab('skills')"> SKILLS</p>
+                            <p class ="tab-links" onclick="opentab('experience')"> EXPERIENCE</p>
+                            <p class ="tab-links" onclick="opentab('education')"> EDUCATION</p>
+                        </div>
+
+                        <div class="tab-contents active-tab", id="skills">
+                            <ul>
+                                <li> <span> AI & ML </span><br>Working with AI/ML models</li>
+                                <li> <span> Data Science </span><br>Working on huge data to find valuable insights.</li>
+                                <li> <span> Bioinformatics </span><br> Analyzing biological data using algorithms.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents", id="experience">
+                            <ul>
+                                <li> <span> April, 2024 - Present  </span><br>Sr.AI/ML Specialist at Cortex PD, a US based non-profit organization. The organization is dedicated to enhance the lives of PD patients with the help of technology governed by 
+                                    Artificial Intelligence. I am working on various projects, some of them are - gait tremor detection and voice tremor detection. </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents", id="education">
+                            <ul>
+                                <li> <span> July, 2024 - August, 2024  </span><br>Summer Training in AI at E&ICT Academy, IIT - Kanpur, India</li>
+                                <li> <span> September, 2023 - May, 2025  </span><br>Master of Science in Bioinformatics at CEPS, Guru Gobind Singh Indraprastha University, Delhi, India</li>
+                                <li> <span> September, 2020 - June, 2023   </span><br> Bachelor of Science at Daulat Ram College, DU, Delhi, India.</li>
+                            </ul>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!------------------services-------------------------->
+    <div id = "services">
+        <div class = "container">
+            <div class = "services-border">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+              <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>AI & ML Developer</h2>
+                <p>Designing and implementing algorithms that enable machines to learn from data, make predictions, and perform tasks autonomously. Working on building models, optimizing performance, and deploying AI solutions in various applications.</p>
+              </div>  
+              <div>
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Data Scientist</h2>
+                <p>Analyzing complex data to uncover insights, build predictive models, and inform decision-making using statistical, machine learning, and analytical techniques. Combining programming, domain knowledge, and data storytelling to solve business problems.</p>
+              </div> 
+              <div>
+                <i class="fa-solid fa-dna"></i>
+                <h2>Bioinformatician</h2>
+                <p>Applying computational tools and techniques to analyze biological data, such as genetic sequences, protein structures, and multi-omics datasets. Bridging biology and data science to gain insights into biological processes, disease mechanisms, and drug discovery.</p>
+              </div> 
+            </div>
+            </div>
+
+            
+        </div>
+
+
+
+    </div>
+
+<!-------------------------portfolio------------------->
+
+<div id = "portfolio">
+    <div class = "container">
+        <div class = "services-border">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>AI NEXUS: SVM-POWERED ATTRITION FORECASTING</h3>
+                    <p>A predictive model leveraging Support Vector Machines (SVM) to accurately forecast employee attrition trends.</p>
+                    <a href ="https://github.com/Gorika-Madaan/HR_ATTRITION.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>MEDICAL INSURANCE COST PREDICTION USING MACHINE LEARNING</h3>
+                    <p>Utilizing machine learning algorithms to predict medical insurance costs based on individual health and demographic factors.</p>
+                    <a href ="https://github.com/Gorika-Madaan/MEDICAL-INSURANCE-COST-PREDICTION.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.webp">
+                <div class="layer">
+                    <h3>TITANIC SURVIVAL PREDICTION</h3>
+                    <p>Predicting passenger survival on the Titanic using machine learning models based on various features like age, gender, and class.</p>
+                    <a href ="https://github.com/Gorika-Madaan/TITANIC-SURVIVAL-PREDICTION.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work4.jpg">
+                <div class="layer">
+                    <h3>IRIS FLOWER CLASSIFICATION SYSTEM</h3>
+                    <p>An ML-based classification system that identifies Iris flower species (Setosa, Versicolor, Virginica) using petal and sepal measurements.</p>
+                    <a href ="https://github.com/Gorika-Madaan/IRIS-CLASSIFICATION-SYSTEM.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work5.avif">
+                <div class="layer">
+                    <h3>MOVIE RATING PREDICTION </h3>
+                    <p>Predicting movie ratings using machine learning models based on features such as genre, cast, and director.</p>
+                    <a href ="https://github.com/Gorika-Madaan/MOVIE-RATING-PREDICTION.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div> 
+        </div>  
+    </div>
+</div>
+
+<!-------------------------contact---------------------------->
+
+<div id = "contact">
+    <div class="container">
+        <div class = "row">
+            <div class="contact-left">
+                <h1 class = "subtitle">Contact Me</h1>
+                <div class ="box">
+                <p><i class="fa-solid fa-paper-plane"></i> gorikamadaan@gmail.com</p>
+                    <div class = "social-icons">
+                        <a href = "https://www.linkedin.com/in/gorika-madaan"><i class="fa-brands fa-linkedin-in"></i></a>  
+                    </div>
+                </div>
+               
+
+            </div> 
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type = "text" name = "Name" placeholder="Your Name" required>
+                    <input type = "text" name = "Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder= "Your Message"></textarea>
+                    <button type="submit" class = "btn btn2">Submit</button>
+                </form>
+                <span id = "msg"></span>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<!-----javascript-->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbywgFVfTrzvpWLuNPmS5paLPRAQATXCbVa_b-jATWu2GUD7bJErF3jHuaP-tXC2j5Gu/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Thank you for contacting. Message sent succesfully."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+         })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </body>
+</html>
