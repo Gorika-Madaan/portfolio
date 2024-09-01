@@ -448,10 +448,14 @@ form .btn2{
     }
     .tab-links{
         font-size: 16px;
-        margin-top: 5%;
+        margin-top: 5px;
+        margin-bottom: none;
     }
     .contact-right form{
         width: 100%;
+    }
+    .layer{
+        font-size: 12px;
     }
 
     .layer h3{
