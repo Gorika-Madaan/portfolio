@@ -470,11 +470,16 @@ form .btn2{
     }
 
     .layer a{
-        margin-top: 5px;
-        font-size: 10px;
-        line-height: 30px; 
-        width: 40px;
-        height: 40px;
+    margin-top: 10px;
+    color: #3d49f3;
+    text-decoration: none; 
+    font-size: 15px;
+    line-height: 40px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
     }
 }
 
